@@ -6,8 +6,7 @@
 #  ██║  ██║██║╚██████╗███████╗    ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗███████╗███████╗██║  ██║
 #  ╚═╝  ╚═╝╚═╝ ╚═════╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
 #   Script to install my dotfiles
-#   Author: z0mbi3
-#   url: https://github.com/gh0stzk
+#   url: https://github.com/Jared0307
 
 CRE=$(tput setaf 1)
 CYE=$(tput setaf 3)
@@ -40,7 +39,7 @@ logo () {
 	       &&&////   &&
 	          &&//@@@**
 	            ..***
-    z0mbi3 Dotfiles\n\n"
+    Dotfiles\n\n"
     printf ' %s [%s%s %s%s %s]%s\n\n' "${CRE}" "${CNC}" "${CYE}" "${text}" "${CNC}" "${CRE}" "${CNC}"
 }
 
