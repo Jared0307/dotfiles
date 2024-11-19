@@ -19,28 +19,6 @@ And more.. You need to look sxhkdrc file for more, or press Alt + F1 for a cheat
 
 ---
 
-> [!CAUTION]
-> ⚠️⚠️⚠️ My dotfiles are designed for a **1600x900** resolution with **96 DPI** on a single monitor.
-> Some elements may appear different on higher or lower resolutions. You may need to make adjustments to adapt them to your preferences and setup. ⚠️⚠️⚠️
-
-> [!important]
-> ✏️✏️✏️ The installer assumes you already have a **functional** Arch Linux installation, whether it’s a fresh install or an existing setup.
->
-> A login manager of your choice is required; **lightdm** is recommended.
->
-> The rofi connection manager applet, works with **NetworkManager**
->
-> If using a virtual machine, be sure to change the Picom backend from **glx** to **xrender** before rebooting, and verify that hardware acceleration is correctly configured in your VM. ✏️✏️✏️
-
-> [!warning]
-> :wrench::wrench::wrench: I have tested the installation and functionality of these dotfiles on both high- and low-end machines.
->
-> Some adjustments may still be needed, such as changing the Picom backend or VSync settings to ensure compatibility with your graphics card.
->
-> If you encounter any issues, feel free to open an [issue](https://github.com/gh0stzk/dotfiles/issues). :wrench::wrench::wrench:
-
----
-
 ### 💾 Installation:
 
 > [!NOTE]
