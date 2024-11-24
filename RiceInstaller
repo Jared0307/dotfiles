@@ -84,23 +84,20 @@ clear
 
 ########## ---------- Install packages ---------- ##########
 
-echo "Instalando dependencias..."
-sudo pacman -Syu --noconfirm xorg xorg-server xf86-video-vmware open-vm-tools gnome
-
-# Habilitar servicios necesarios
-echo "Habilitando servicios..."
-sudo systemctl enable gdm
-sudo systemctl enable vmtoolsd
-
 logo "Installing needed packages.."
 
-dependencias=(alacritty base-devel bat brightnessctl bspwm dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
+dependencias=(xorg xorg-server xf86-video-vmware open-vm-tools gnome alacritty base-devel bat brightnessctl bspwm dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
 			        jgmenu libwebp maim mpc mpd neovim ncmpcpp npm pamixer pacman-contrib \
 			        papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject \
 			        redshift rofi rustup sxhkd tmux ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
 			        ttf-joypixels ttf-terminus-nerd ttf-ubuntu-mono-nerd ueberzug webp-pixbuf-loader xclip xdg-user-dirs \
 			        xdo xdotool xsettingsd xorg-xdpyinfo xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot \
 			        xorg-xwininfo yazi zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
+
+# Habilitar servicios necesarios
+echo "Habilitando servicios..."
+sudo systemctl enable gdm
+sudo systemctl enable vmtoolsd
 
 printf "%s%sChecking for required packages...%s\n\n" "${BLD}" "${CBL}" "${CNC}"
 
