@@ -5,9 +5,8 @@
 #  ██╔══██╗██║██║     ██╔══╝      ██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██║     ██╔══╝  ██╔══██╗
 #  ██║  ██║██║╚██████╗███████╗    ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗███████╗███████╗██║  ██║
 #  ╚═╝  ╚═╝╚═╝ ╚═════╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
-#   Script to install my dotfiles
-#   Author: z0mbi3
-#   url: https://github.com/gh0stzk
+#   Script to install dotfiles
+#   url: https://github.com/Jared0307
 
 CRE=$(tput setaf 1)
 CYE=$(tput setaf 3)
@@ -86,7 +85,7 @@ clear
 
 logo "Installing needed packages.."
 
-dependencias=(alacritty base-devel bat brightnessctl bspwm dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
+dependencias=(xorg xorg-server xf86-video-vmware open-vm-tools gnome alacritty base-devel bat brightnessctl bspwm dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
 			        jgmenu libwebp maim mpc mpd neovim ncmpcpp npm pamixer pacman-contrib \
 			        papirus-icon-theme picom playerctl polybar polkit-gnome python-gobject \
 			        redshift rofi rustup sxhkd tmux ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
@@ -465,6 +464,12 @@ logo "Changing default shell to zsh"
     fi
 sleep 3
 clear
+
+# Habilitar servicios necesarios
+echo "Habilitando servicios..."
+sudo systemctl enable gdm
+sudo systemctl enable vmtoolsd
+
 
 ########## --------- exit ---------- ##########
 
