@@ -84,6 +84,22 @@ clear
 
 ########## ---------- Install packages ---------- ##########
 
+echo "Instalando dependencias..."
+sudo pacman -Syu --noconfirm xorg xorg-server xf86-video-vmware open-vm-tools gnome gnome-shell
+
+# Habilitar servicios necesarios
+echo "Habilitando servicios..."
+sudo systemctl enable gdm.service
+sudo systemctl enable vmtoolsd.service
+sudo systemctl enable vmware-vmblock-fuse.service
+
+# Iniciar servicios
+echo "Iniciando servicios..."
+sudo systemctl start gdm.service
+sudo systemctl start vmtoolsd.service
+sudo systemctl start vmware-vmblock-fuse.service
+
+
 logo "Installing needed packages.."
 
 dependencias=(alacritty base-devel bat brightnessctl bspwm dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
