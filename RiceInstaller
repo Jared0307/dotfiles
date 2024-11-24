@@ -39,7 +39,7 @@ logo () {
 	       &&&////   &&
 	          &&//@@@**
 	            ..***
-    z0mbi3 Dotfiles\n\n"
+    BerAndBian Dotfiles\n\n"
     printf ' %s [%s%s %s%s %s]%s\n\n' "${CRE}" "${CNC}" "${CYE}" "${text}" "${CNC}" "${CRE}" "${CNC}"
 }
 
@@ -82,6 +82,8 @@ done
 clear
 
 ########## ---------- Install packages ---------- ##########
+
+sudo pacman -Syuuuuuuuu
 
 logo "Installing needed packages.."
 
